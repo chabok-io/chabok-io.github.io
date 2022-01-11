@@ -8,7 +8,7 @@ GITHUB_ACTOR=$3 &&
 echo '===> Start running scripts for jekyll build.' &&
 
 cd ./dist &&
-remote_repo="https://x-access-token:${ACCESS_TOKEN}@github.com/chabok-io/chabok-io.github.io.git" &&
+remote_repo="https://${{ACCESS_TOKEN}}:x-oauth-basic@github.com/chabok-io/chabok-io.github.io.git" &&
 remote_branch="gh-pages" && 
 
 echo remote_branch $remote_branch &&
