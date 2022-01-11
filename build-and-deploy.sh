@@ -7,7 +7,7 @@ GITHUB_ACTOR=$3 &&
 
 echo '===> Start running scripts for jekyll build.' &&
 
-cd /srv/dist &&
+cd ./dist &&
 remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" &&
 remote_branch="gh-pages" && 
 
