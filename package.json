@@ -1,0 +1,32 @@
+{
+  "name": "@chabok/web-sdk-demo",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "esno scripts/dev.ts",
+    "build": "esno scripts/build.ts",
+	"serve": "vite preview",
+    "lint": "eslint . --ext .ts --ext .js"
+  },
+  "dependencies": {
+    "@chabok/ui": "^0.13.4",
+    "firebase": "^9.6.1",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
+    "vue": "^3.2.26"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "@vitejs/plugin-vue": "^2.0.1",
+    "@vue/compiler-sfc": "^3.2.26",
+    "consola": "^2.15.3",
+    "eslint": "^8.6.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "esno": "^0.10.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.10"
+  }
+}
