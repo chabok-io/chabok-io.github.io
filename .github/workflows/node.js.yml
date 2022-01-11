@@ -32,4 +32,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
-    - run: sh ./build-and-deploy.sh ${GITHUB_TOKEN} ${GITHUB_REPOSITORY} ${GITHUB_ACTOR}
+    - run: sh ./build-and-deploy.sh ${GITHUB_TOKEN} "chabok-io.github.io" ${GITHUB_ACTOR}
