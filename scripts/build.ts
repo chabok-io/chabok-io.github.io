@@ -10,7 +10,9 @@ async function bootstrap() {
 		build: {
 			outDir: path.resolve(Paths.root, 'dist'),
 			emptyOutDir: true,
+			
 		},
+		publicDir: Paths.publicDir,
 		plugins: [vue()],
 		resolve: {
 			alias: Alias,
