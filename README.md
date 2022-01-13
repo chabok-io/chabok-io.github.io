@@ -46,7 +46,7 @@ npm run build
 
 Then put the `dist` directory at the root of your web server.
 
-Also it is possible to preview che production build on  your local machine:
+Also it is possible to preview the production build on  your local machine:
 
 ```sh
 npm run serve
