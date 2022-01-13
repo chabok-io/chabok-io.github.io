@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "esno scripts/dev.ts",
     "build": "esno scripts/build.ts",
-	"serve": "vite preview",
+    "serve": "vite preview",
     "lint": "eslint . --ext .ts --ext .js",
     "deploy": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git subtree push --prefix dist origin gh-pages"
   },
@@ -23,6 +23,7 @@
     "@typescript-eslint/parser": "^5.9.0",
     "@vitejs/plugin-vue": "^2.0.1",
     "@vue/compiler-sfc": "^3.2.26",
+    "autoprefixer": "^10.4.2",
     "consola": "^2.15.3",
     "eslint": "^8.6.0",
     "eslint-plugin-vue": "^8.2.0",
