@@ -168,7 +168,7 @@ export default defineComponent({
 					vapid: previousInitData.firebaseConfigs ? previousInitData.firebaseConfigs.vapid : '',
 				},
 				configs: {
-					cdn: previousInitData.configs ? previousInitData.configs.cdn : 'https://cdn.chabok.io/chabok.iife.js',
+					cdn: previousInitData.configs.cdn || 'https://cdn.chabok.io/chabok.iife.js',
 				},
 			},
 			now: Date.now(),
