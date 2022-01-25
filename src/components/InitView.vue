@@ -5,6 +5,8 @@
 			<div>
 				<h4 class="title">
 					Init SDK
+
+					<span>{{ sdkVersion }}</span>
 				</h4>
 			</div>
 			<c-button
@@ -136,6 +138,7 @@ export default defineComponent({
 	data() {
 		return {
 			openConfigsModal: false,
+			sdkVersion: '',
 		};
 	},
 	computed: {
@@ -148,7 +151,17 @@ export default defineComponent({
 			},
 		},
 	},
+	created() {
+		window.addEventListener('load', this.readSDKVersion);
+	},
 	methods: {
+		readSDKVersion() {
+			// @ts-ignore
+			if (window.chabok) {
+				// @ts-ignore
+				this.sdkVersion = `(${window.chabok.VERSION})`;
+			}
+		},
 		onSetDefaultTracker() {
 			this.$emit('set-default-tracker');
 		},
