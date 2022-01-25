@@ -27,7 +27,6 @@
 				v-model="model.profileData.phoneNumber"
 				placeholder="Phone number"
 				:disabled="!initialized"
-				type="number"
 				class="mb-4"
 				fluid
 			/>
